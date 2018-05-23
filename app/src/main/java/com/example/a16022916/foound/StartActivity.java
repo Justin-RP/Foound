@@ -30,10 +30,11 @@ public class StartActivity extends AppCompatActivity {
         int width = size.x;
         int desiredWidth = width / 100 * 90;
 
-        View layout_main = findViewById(R.id.LinearLayoutMain);
+        View layout_main = findViewById(R.id.layout);
         ViewGroup.LayoutParams params = layout_main.getLayoutParams();
         params.width = desiredWidth;
         layout_main.setLayoutParams(params);
+
 
         btnLaw = findViewById(R.id.startButtonLaw);
         btnBusiness = findViewById(R.id.startButtonBusiness);
