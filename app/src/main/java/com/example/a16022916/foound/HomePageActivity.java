@@ -32,7 +32,7 @@ public class HomePageActivity extends AppCompatActivity {
         editButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                //for input
                 LayoutInflater inflater =
                         (LayoutInflater) getBaseContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
                 View viewDialog = inflater.inflate(R.layout.input, null);
