@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomePageActivity">
+
+    <EditText
+        android:id="@+id/editTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textBoxView"
+        android:layout_marginTop="73dp"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="textPersonName"
+        android:layout_alignLeft="@+id/textBoxView" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/editTitleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="58dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/editTitle"
+        android:layout_marginEnd="72dp"
+        android:clickable="true"
+        app:srcCompat="@android:drawable/ic_menu_edit"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="72dp" />
+
+    <TextView
+        android:id="@+id/textBoxView"
+        android:layout_width="310dp"
+        android:layout_height="190dp"
+        android:layout_centerInParent="true" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/mapButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/editTitle"
+        android:layout_marginBottom="84dp"
+        android:clickable="true"
+        app:srcCompat="@android:drawable/ic_menu_mapmode"
+        android:layout_alignLeft="@+id/editTitle" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/biikenButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/mapButton"
+        android:layout_below="@+id/textBoxView"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        app:backgroundTint="@android:color/background_light"
+        app:srcCompat="@drawable/button" />
+</RelativeLayout>

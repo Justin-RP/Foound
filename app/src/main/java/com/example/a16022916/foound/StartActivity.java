@@ -23,17 +23,7 @@ public class StartActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start);
 
-        // Set width of the layout according to the phone
-        Display display = getWindowManager().getDefaultDisplay();
-        Point size = new Point();
-        display.getSize(size);
-        int width = size.x;
-        int desiredWidth = width / 100 * 90;
 
-        View layout_main = findViewById(R.id.layout);
-        ViewGroup.LayoutParams params = layout_main.getLayoutParams();
-        params.width = desiredWidth;
-        layout_main.setLayoutParams(params);
 
 
         btnLaw = findViewById(R.id.startButtonLaw);
@@ -49,7 +39,7 @@ public class StartActivity extends AppCompatActivity {
                 editor.putString("sharedPrefWorkType","Law");
                 editor.apply();
 
-//                Intent intent = new Intent(getBaseContext(), newActivity().class);
+//                Intent intent = new Intent(getBaseContext(), homepageactivity().class);
 //                intent.putExtra("workType","Law");
 //                startActivity(intent);
             }
@@ -65,7 +55,7 @@ public class StartActivity extends AppCompatActivity {
                 editor.putString("sharedPrefWorkType","Business");
                 editor.apply();
 
-//                Intent intent = new Intent(getBaseContext(), newActivity().class);
+//                Intent intent = new Intent(getBaseContext(), homepageactivity().class);
 //                intent.putExtra("workType","Business");
 //                startActivity(intent);
             }
